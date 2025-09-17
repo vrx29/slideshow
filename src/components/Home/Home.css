@@ -1,0 +1,43 @@
+.home-container {
+  padding: 24px;
+}
+
+.section {
+  margin-bottom: 32px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.section-header h2 {
+  margin: 0;
+}
+
+.view-more {
+  background: none;
+  border: none;
+  color: #1976d2;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.reels-list {
+  display: flex;
+  gap: 16px;
+  overflow-x: hidden;
+  padding-bottom: 8px;
+}
+
+.reel-thumb {
+  width: 300px;
+  height: 560px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  flex-shrink: 0;
+}

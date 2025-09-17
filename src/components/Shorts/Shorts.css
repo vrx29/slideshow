@@ -1,0 +1,146 @@
+.shorts-carousel-container {
+  padding: 24px;
+  text-align: center;
+}
+
+.shorts-carousel {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  padding: 32px 0;
+  scroll-behavior: smooth;
+  justify-content: center;
+  align-items: center;
+}
+
+.shorts-carousel-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s;
+  cursor: pointer;
+  opacity: 0.6;
+  min-width: 120px;
+  min-height: 180px;
+}
+
+.shorts-carousel-item.selected {
+  transform: scale(1.15);
+  opacity: 1;
+  z-index: 2;
+  min-width: 320px;
+  min-height: 480px;
+}
+
+.shorts-carousel-item.pad {
+  pointer-events: none;
+  opacity: 0;
+}
+
+.shorts-thumb {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.shorts-video {
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  outline: none;
+}
+
+.shorts-title {
+  margin-top: 8px;
+  font-weight: 500;
+}
+
+
+.shorts-fullpage-container {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.shorts-fullpage-row {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.shorts-fullpage-center {
+  width: 700px;
+  height: 100vh;
+  padding: 16px;
+
+}
+.shorts-fullpage-left,
+.shorts-fullpage-right {
+  display: flex;
+  flex-direction: row; /* Change from column to row */
+  align-items: flex-end;
+  justify-content: center;
+  min-width: 120px;
+  max-width: 480px;
+  height: 100vh;
+  gap: 16px;
+}
+
+.shorts-fullpage-left {
+  justify-content: flex-end;
+}
+
+.shorts-fullpage-right {
+  justify-content: flex-end;
+}
+
+.shorts-side-reel {
+  cursor: pointer;
+  transition: transform 0.2s;
+  opacity: 0.7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Keep the size classes for horizontal thumbnails */
+.shorts-side-reel.left.size-3 img {
+  width: 56px;
+  height: 84px;
+}
+.shorts-side-reel.left.size-2 img {
+  width: 80px;
+  height: 120px;
+}
+.shorts-side-reel.left.size-1 img {
+   width: 120px;
+  height: 180px;
+}
+.shorts-side-reel.size-3 img {
+  width: 120px;
+  height: 180px;
+}
+.shorts-side-reel.size-2 img {
+  width: 80px;
+  height: 120px;
+}
+.shorts-side-reel.size-1 img {
+  width: 56px;
+  height: 84px;
+}
+
+/* Comments box stays vertical */
+.shorts-comments {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  padding: 16px;
+  max-width: 220px;
+  margin-right: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
